@@ -1,0 +1,20 @@
+[project]
+name = "python-r-tutorial"
+version = "0.1.0"
+description = "Python data science fundamentals for R users"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel",
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "plotnine",
+    "scikit-learn",
+    "seaborn",
+    "statsmodels",
+]
+
+[tool.uv]
+package = false
