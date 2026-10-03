@@ -1,8 +1,7 @@
-# Python for R users
+# Python for R
 
-A hands-on tutorial that teaches Python data science fundamentals by
-translating from R. Each chapter shows the R code you already know next to its
-Python equivalent, using datasets you have probably met before (`penguins`,
+Some example notebooks showing translations from R fundamentals to python fundamentals.
+Each chapter shows the R code you already know next to its Python equivalent, using datasets my claude had the notion you'd be familiar with (`penguins`,
 `gapminder`, `nycflights13`).
 
 No R installation is needed. The R snippets are for reference only; the Python
@@ -17,16 +16,10 @@ You need three things: `git`, `uv`, and an editor.
 [uv](https://docs.astral.sh/uv/) manages both Python itself and the packages
 for this project. It plays the role `renv` plays in R.
 
-macOS / Linux:
+Open Terminal and run:
 
 ```sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-Windows (PowerShell):
-
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 Open a new terminal afterwards so `uv` is on your path.
