@@ -52,7 +52,7 @@ Prefer the browser? Run `uv run jupyter lab` instead.
 ## How to work through it
 
 Go through `notebooks/` in order. After each chapter, try the matching notebook
-in `exercises/`, then compare against `exercises/solutions/`.
+in `exercises/`, then compare against `solutions/`.
 
 | Chapter | R concepts | Python concepts |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ in `exercises/`, then compare against `exercises/solutions/`.
 data/                 example datasets as CSV
 notebooks/            the tutorial chapters
 exercises/            practice notebooks, one per chapter
-exercises/solutions/  worked solutions
+solutions/            worked solutions, one per chapter
 cheatsheet.md         R ↔ Python lookup table
 pyproject.toml        package list (like DESCRIPTION)
 uv.lock               exact pinned versions (like renv.lock)
