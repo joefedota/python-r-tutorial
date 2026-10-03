@@ -1,6 +1,7 @@
 # R ↔ Python cheatsheet
 
-Assumes `import numpy as np` and `import pandas as pd`.
+Assumes `import numpy as np`, `import pandas as pd`, `import seaborn as sns`,
+`import matplotlib.pyplot as plt` and `import statsmodels.formula.api as smf`.
 
 ## Language
 
@@ -48,11 +49,25 @@ Assumes `import numpy as np` and `import pandas as pd`.
 | `is.na(x)` | `s.isna()` |
 | `drop_na(df)` | `df.dropna()` |
 
-## Plotting and models
+## Plotting
 
 | R | Python |
 | --- | --- |
-| `ggplot(df, aes(x, y)) + geom_point()` | `ggplot(df, aes("x", "y")) + geom_point()` (plotnine) |
+| `ggplot(df, aes(x, y)) + geom_point()` | `sns.scatterplot(data=df, x="x", y="y")` |
+| `aes(color = g)` | `hue="g"` |
+| `geom_line()` | `sns.lineplot(data=df, x="x", y="y")` |
+| `geom_histogram()` | `sns.histplot(data=df, x="x")` |
+| `geom_boxplot()` | `sns.boxplot(data=df, x="g", y="y")` |
+| `geom_bar()` | `sns.countplot(data=df, x="g")` |
+| `facet_wrap(~ g)` | `sns.relplot(data=df, x="x", y="y", col="g")` |
+| `labs(x = "X", title = "T")` | `ax.set(xlabel="X", title="T")` |
+| `ggsave("plot.png")` | `plt.savefig("plot.png")` |
+
+## Models
+
+| R | Python |
+| --- | --- |
 | `lm(y ~ x, data = df)` | `smf.ols("y ~ x", data=df).fit()` |
+| `glm(y ~ x, family = binomial, data = df)` | `smf.logit("y ~ x", data=df).fit()` |
 | `summary(model)` | `model.summary()` |
 | `predict(model, newdata)` | `model.predict(newdata)` |

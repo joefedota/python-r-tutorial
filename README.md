@@ -61,7 +61,7 @@ in `exercises/`, then compare against `exercises/solutions/`.
 | `02_dataframes` | `data.frame`, tibble, `NA` | `DataFrame`, `Series`, the index, `NaN` |
 | `03_data_wrangling` | dplyr verbs, `\|>` | pandas, method chaining |
 | `04_reshape_and_join` | tidyr, `*_join()` | `melt`, `pivot`, `merge` |
-| `05_plotting` | ggplot2 | plotnine, seaborn, matplotlib |
+| `05_plotting` | ggplot2 | seaborn, matplotlib |
 | `06_stats_and_models` | `lm()`, `glm()` | statsmodels, scikit-learn |
 | `07_gotchas` | copy-on-modify | references, mutability, index alignment |
 
