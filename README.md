@@ -1,6 +1,6 @@
 # Python for R
 
-Some example notebooks showing translations from R fundamentals to python fundamentals.
+Zome example notebooks showing translations from R fundamentals to python fundamentals.
 Each chapter shows the R code you already know next to its Python equivalent, using datasets my claude had the notion you'd be familiar with (`penguins`,
 `gapminder`, `nycflights13`).
 
